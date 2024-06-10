@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+// Meminta input dua bilangan dari pengguna
+let number1 = prompt("Masukkan bilangan pertama:");
+let number2 = prompt("Masukkan bilangan kedua:");
+
+// Mengonversi input menjadi bilangan
+number1 = parseFloat(number1);
+number2 = parseFloat(number2);
+
+// Memeriksa apakah input valid (angka)
+if (isNaN(number1) || isNaN(number2)) {
+    document.write("Salah satu atau kedua input bukan bilangan yang valid.");
+} else {
+    // Membandingkan kedua bilangan dan menampilkan hasilnya
+    if (number1 > number2) {
+        document.write("Bilangan pertama lebih besar dari bilangan kedua.");
+    } else if (number1 < number2) {
+        document.write("Bilangan pertama lebih kecil dari bilangan kedua.");
+    } else {
+        document.write("Kedua bilangan sama.");
+    }
+}
+</script>
+</html>
